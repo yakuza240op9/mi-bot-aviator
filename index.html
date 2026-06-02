@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA HACKER BOT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-card" id="app">
+            <div id="screen-login">
+                <h1 class="app-title">🤖 IA HACKER BOT</h1>
+                <input type="text" id="username" placeholder="ID de Jugador">
+                <button onclick="app.iniciar()">CONECTAR ALGORITMO</button>
+            </div>
+            <div id="screen-loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Analizando datos de servidor...</p>
+            </div>
+            <div id="screen-signal" class="hidden">
+                <h2 class="app-title">🎯 SEÑAL LISTA</h2>
+                <div class="signal-output" id="signal-output">0.00x</div>
+                <button onclick="app.iniciar()">NUEVA SEÑAL</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
